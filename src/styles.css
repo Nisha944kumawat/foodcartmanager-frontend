@@ -6,3 +6,19 @@
 @media(max-width:1100px) and (min-width:761px){aside{width:220px}main{margin-left:220px;width:calc(100% - 220px)}.content{padding:26px}.dish-grid{grid-template-columns:repeat(2,1fr)}.dashboard-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}header{padding:0 24px}.table-wrap table{min-width:650px}}
 @media(max-width:760px){.index-head,.sales-head{align-items:stretch;flex-direction:column}.index-head .toolbar{margin:0}.index-head .toolbar input{max-width:none}.category-tabs{overflow-x:auto;flex-wrap:nowrap;padding-bottom:3px}.category-tabs button{white-space:nowrap}.dashboard-grid{grid-template-columns:1fr}.chart-panel{padding:17px}.chart-head{align-items:flex-start;flex-direction:column}.dish-bar-row{grid-template-columns:90px 1fr auto;gap:7px}.dish-bar-label{font-size:11px}.sales-head label{min-width:0}.period-tabs{align-items:stretch}.period-tabs input{min-width:140px}.modal{padding:18px}.table-wrap{border-radius:12px}.actions button{padding:8px}.inline-rate{max-width:120px}.page-title h1{font-size:26px}}
 @media(max-width:380px){header{height:66px;padding:0 10px}.content{padding:18px 10px}.primary,.outline,.ghost{padding:10px 12px}.stat{padding:17px}.stat strong{font-size:23px}.bar-chart{gap:5px}.bar-item{min-width:35px}.bar{width:22px}}
+.dish-price{clear:both;margin-top:16px;padding:12px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.dish-price span{color:var(--muted);font-size:13px;font-weight:700}.dish-price b{font-size:18px}.cost-lines .loss-highlight{background:#fff0f1;color:var(--red)}
+
+@media print{
+  @page{size:A4 landscape;margin:12mm}
+  body{background:#fff!important}
+  aside,header,.mobile-menu,.report-tabs,.print-hide{display:none!important}
+  main{margin-left:0!important;width:100%!important}
+  .content{max-width:none!important;padding:0!important}
+  .page-title{margin-bottom:18px}
+  .stat,.panel,.chart-panel{box-shadow:none!important;break-inside:avoid}
+  .cards{grid-template-columns:repeat(4,1fr)!important}
+  .dashboard-grid{break-inside:avoid}
+  .table-wrap{overflow:visible!important}
+  .table-wrap table{min-width:0!important}
+  *{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+}
